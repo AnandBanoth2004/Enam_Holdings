@@ -1,0 +1,9 @@
+FINN SYNTHETIC DEMONSTRATION DOCUMENT
+NOT AN ISSUER FILING. NOT COMPANY-REPORTED DATA.
+
+Mapped ticker for database testing: RELIANCE
+Example period label: Q2 FY26
+Currency and scale: INR crore
+Illustrative-only metric row: revenue 1000, EBITDA 180, PBT 140, PAT 100.
+
+All values above are invented test placeholders. Do not cite, compare, or present them as Reliance Industries results.

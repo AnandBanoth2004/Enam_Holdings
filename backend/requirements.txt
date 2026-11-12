@@ -1,0 +1,14 @@
+fastapi>=0.115,<1
+PyJWT[crypto]>=2.10,<3
+uvicorn[standard]>=0.34,<1
+pydantic-settings>=2.7,<3
+sqlalchemy>=2.0,<3
+psycopg[binary]>=3.2,<4
+alembic>=1.14,<2
+pgvector>=0.4,<1
+httpx>=0.28,<1
+pdfplumber>=0.11,<1
+pymupdf>=1.25,<2
+pytesseract>=0.3.13,<1
+yfinance>=0.2.54,<1
+pandas>=2.2,<3

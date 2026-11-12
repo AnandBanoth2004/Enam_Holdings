@@ -1,0 +1,958 @@
+{
+  "dataset_id": "finn-fictional-network-v1",
+  "synthetic": true,
+  "notice": "All names, roles, career histories, and relationships in this fixture are fictional and fabricated for product testing. They are not real people and must never be presented as live network data.",
+  "profiles": [
+    {
+      "profile_id": "synthetic-001",
+      "display_name": "Aarav Mehta",
+      "synthetic": true,
+      "sector": "Energy & Conglomerates",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Reliance Industries Limited",
+          "ticker": "RELIANCE",
+          "sector": "Energy & Conglomerates",
+          "title": "Corporate Finance Director",
+          "start_year": 2021
+        },
+        {
+          "experience_type": "employment",
+          "organization": "GAIL India Limited",
+          "sector": "Energy & Conglomerates",
+          "title": "Senior Finance Manager",
+          "start_year": 2017,
+          "end_year": 2021
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Deutsche Bank India",
+          "sector": "Financial Services",
+          "title": "Investment Banking Associate",
+          "start_year": 2014,
+          "end_year": 2017
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-002",
+      "display_name": "Mira Deshpande",
+      "synthetic": true,
+      "sector": "Energy & Conglomerates",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Adani Enterprises Limited",
+          "sector": "Energy & Conglomerates",
+          "title": "Infrastructure Strategy Lead",
+          "start_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "GMR Infrastructure Limited",
+          "sector": "Engineering & Infrastructure",
+          "title": "Strategic Planning Manager",
+          "start_year": 2015,
+          "end_year": 2019
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-003",
+      "display_name": "Kabir Rao",
+      "synthetic": true,
+      "sector": "Information Technology",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Tata Consultancy Services Limited",
+          "ticker": "TCS",
+          "sector": "Information Technology",
+          "title": "Enterprise Solutions Executive",
+          "start_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Cognizant Technology Solutions",
+          "sector": "Information Technology",
+          "title": "Senior Technology Consultant",
+          "start_year": 2016,
+          "end_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Oracle India",
+          "sector": "Information Technology",
+          "title": "Applications Analyst",
+          "start_year": 2013,
+          "end_year": 2016
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-004",
+      "display_name": "Ishita Kulkarni",
+      "synthetic": true,
+      "sector": "Information Technology",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "HCL Technologies Limited",
+          "sector": "Information Technology",
+          "title": "Cloud Transformation Adviser",
+          "start_year": 2018
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Mphasis Limited",
+          "sector": "Information Technology",
+          "title": "Cloud Solutions Manager",
+          "start_year": 2015,
+          "end_year": 2018
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-005",
+      "display_name": "Dev Malhotra",
+      "synthetic": true,
+      "sector": "Financial Services",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "HDFC Bank Limited",
+          "ticker": "HDFCBANK",
+          "sector": "Financial Services",
+          "title": "Retail Banking Product Lead",
+          "start_year": 2022
+        },
+        {
+          "experience_type": "employment",
+          "organization": "ICICI Bank Limited",
+          "ticker": "ICICIBANK",
+          "sector": "Financial Services",
+          "title": "Product Manager - Retail Deposits",
+          "start_year": 2018,
+          "end_year": 2022
+        },
+        {
+          "experience_type": "employment",
+          "organization": "CRISIL Limited",
+          "sector": "Financial Services",
+          "title": "Banking Sector Analyst",
+          "start_year": 2015,
+          "end_year": 2018
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-006",
+      "display_name": "Ananya Iyer",
+      "synthetic": true,
+      "sector": "Financial Services",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "ICICI Bank Limited",
+          "ticker": "ICICIBANK",
+          "sector": "Financial Services",
+          "title": "Credit Risk Manager",
+          "start_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Bajaj Finance Limited",
+          "ticker": "BAJFINANCE",
+          "sector": "Financial Services",
+          "title": "Risk Analytics Lead",
+          "start_year": 2017,
+          "end_year": 2020
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-007",
+      "display_name": "Rohan Bhat",
+      "synthetic": true,
+      "sector": "Financial Services",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Axis Bank Limited",
+          "ticker": "AXISBANK",
+          "sector": "Financial Services",
+          "title": "Treasury Operations Lead",
+          "start_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Kotak Mahindra Bank Limited",
+          "ticker": "KOTAKBANK",
+          "sector": "Financial Services",
+          "title": "Treasury Analyst",
+          "start_year": 2015,
+          "end_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Deutsche Bank India",
+          "sector": "Financial Services",
+          "title": "Fixed Income Associate",
+          "start_year": 2012,
+          "end_year": 2015
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-008",
+      "display_name": "Sana Qureshi",
+      "synthetic": true,
+      "sector": "Financial Services",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Kotak Mahindra Bank Limited",
+          "ticker": "KOTAKBANK",
+          "sector": "Financial Services",
+          "title": "Wealth Product Specialist",
+          "start_year": 2021
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Morgan Stanley India",
+          "sector": "Financial Services",
+          "title": "Wealth Management Associate",
+          "start_year": 2017,
+          "end_year": 2021
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-009",
+      "display_name": "Neil Fernandes",
+      "synthetic": true,
+      "sector": "Financial Services",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Bajaj Finance Limited",
+          "ticker": "BAJFINANCE",
+          "sector": "Financial Services",
+          "title": "Consumer Lending Analyst",
+          "start_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "CRISIL Limited",
+          "sector": "Financial Services",
+          "title": "Credit Research Associate",
+          "start_year": 2017,
+          "end_year": 2020
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-010",
+      "display_name": "Tara Menon",
+      "synthetic": true,
+      "sector": "Financial Services",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "State Bank of India",
+          "ticker": "SBIN",
+          "sector": "Financial Services",
+          "title": "Institutional Banking Manager",
+          "start_year": 2017
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Goldman Sachs India",
+          "sector": "Financial Services",
+          "title": "Corporate Finance Analyst",
+          "start_year": 2013,
+          "end_year": 2017
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-011",
+      "display_name": "Arjun Sethi",
+      "synthetic": true,
+      "sector": "Information Technology",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Infosys Limited",
+          "ticker": "INFY",
+          "sector": "Information Technology",
+          "title": "Delivery Operations Director",
+          "start_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Tata Consultancy Services Limited",
+          "ticker": "TCS",
+          "sector": "Information Technology",
+          "title": "Project Delivery Manager",
+          "start_year": 2015,
+          "end_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "IBM India",
+          "sector": "Information Technology",
+          "title": "Technology Consultant",
+          "start_year": 2011,
+          "end_year": 2015
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-012",
+      "display_name": "Leela Nair",
+      "synthetic": true,
+      "sector": "Information Technology",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Wipro Limited",
+          "sector": "Information Technology",
+          "title": "Digital Services Consultant",
+          "start_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Cognizant Technology Solutions",
+          "sector": "Information Technology",
+          "title": "Digital Transformation Analyst",
+          "start_year": 2015,
+          "end_year": 2019
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-013",
+      "display_name": "Vikram Joshi",
+      "synthetic": true,
+      "sector": "Consumer Goods",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "ITC Limited",
+          "ticker": "ITC",
+          "sector": "Consumer Goods",
+          "title": "Consumer Products Category Lead",
+          "start_year": 2021
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Dabur India Limited",
+          "sector": "Consumer Goods",
+          "title": "Category Management Manager",
+          "start_year": 2017,
+          "end_year": 2021
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Procter & Gamble India",
+          "sector": "Consumer Goods",
+          "title": "Brand Associate",
+          "start_year": 2014,
+          "end_year": 2017
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-014",
+      "display_name": "Nisha Kapoor",
+      "synthetic": true,
+      "sector": "Consumer Goods",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Hindustan Unilever Limited",
+          "ticker": "HINDUNILVR",
+          "sector": "Consumer Goods",
+          "title": "Brand Portfolio Manager",
+          "start_year": 2018
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Colgate-Palmolive India",
+          "sector": "Consumer Goods",
+          "title": "Brand Manager",
+          "start_year": 2014,
+          "end_year": 2018
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-015",
+      "display_name": "Aditya Pillai",
+      "synthetic": true,
+      "sector": "Consumer Goods",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Nestle India Limited",
+          "sector": "Consumer Goods",
+          "title": "Supply Planning Executive",
+          "start_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Britannia Industries Limited",
+          "sector": "Consumer Goods",
+          "title": "Supply Chain Analyst",
+          "start_year": 2016,
+          "end_year": 2020
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-016",
+      "display_name": "Priya Bansal",
+      "synthetic": true,
+      "sector": "Engineering & Infrastructure",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Larsen & Toubro Limited",
+          "ticker": "LT",
+          "sector": "Engineering & Infrastructure",
+          "title": "Project Finance Lead",
+          "start_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "GMR Infrastructure Limited",
+          "sector": "Engineering & Infrastructure",
+          "title": "Infrastructure Finance Manager",
+          "start_year": 2015,
+          "end_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Deutsche Bank India",
+          "sector": "Financial Services",
+          "title": "Project Finance Analyst",
+          "start_year": 2012,
+          "end_year": 2015
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-017",
+      "display_name": "Kunal Chatterjee",
+      "synthetic": true,
+      "sector": "Engineering & Infrastructure",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Tata Projects Limited",
+          "sector": "Engineering & Infrastructure",
+          "title": "Capital Projects Planner",
+          "start_year": 2018
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Bharat Heavy Electricals Limited",
+          "sector": "Engineering & Infrastructure",
+          "title": "Project Planning Engineer",
+          "start_year": 2014,
+          "end_year": 2018
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-018",
+      "display_name": "Farah Sheikh",
+      "synthetic": true,
+      "sector": "Telecommunications",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Bharti Airtel Limited",
+          "ticker": "BHARTIARTL",
+          "sector": "Telecommunications",
+          "title": "Network Strategy Manager",
+          "start_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Reliance Jio Infocomm Limited",
+          "sector": "Telecommunications",
+          "title": "Network Planning Analyst",
+          "start_year": 2016,
+          "end_year": 2020
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-019",
+      "display_name": "Sameer Reddy",
+      "synthetic": true,
+      "sector": "Telecommunications",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Vodafone Idea Limited",
+          "sector": "Telecommunications",
+          "title": "Commercial Planning Adviser",
+          "start_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "MTNL",
+          "sector": "Telecommunications",
+          "title": "Commercial Strategy Analyst",
+          "start_year": 2015,
+          "end_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Bharti Airtel Limited",
+          "ticker": "BHARTIARTL",
+          "sector": "Telecommunications",
+          "title": "Market Development Associate",
+          "start_year": 2012,
+          "end_year": 2015
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-020",
+      "display_name": "Aditi Ghosh",
+      "synthetic": true,
+      "sector": "Automotive",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Maruti Suzuki India Limited",
+          "ticker": "MARUTI",
+          "sector": "Automotive",
+          "title": "Vehicle Program Manager",
+          "start_year": 2022
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Hero MotoCorp Limited",
+          "sector": "Automotive",
+          "title": "Product Planning Engineer",
+          "start_year": 2018,
+          "end_year": 2022
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-021",
+      "display_name": "Manav Sood",
+      "synthetic": true,
+      "sector": "Automotive",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Mahindra & Mahindra Limited",
+          "sector": "Automotive",
+          "title": "Mobility Market Analyst",
+          "start_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "TVS Motor Company Limited",
+          "sector": "Automotive",
+          "title": "Market Research Analyst",
+          "start_year": 2016,
+          "end_year": 2020
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-022",
+      "display_name": "Rhea Thomas",
+      "synthetic": true,
+      "sector": "Automotive",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Tata Motors Limited",
+          "ticker": "TATAMOTORS",
+          "sector": "Automotive",
+          "title": "EV Supply Chain Specialist",
+          "start_year": 2021
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Bosch India",
+          "sector": "Automotive",
+          "title": "Supply Chain Analyst",
+          "start_year": 2017,
+          "end_year": 2021
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-023",
+      "display_name": "Nikhil Varma",
+      "synthetic": true,
+      "sector": "Pharmaceuticals",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Sun Pharmaceutical Industries Limited",
+          "ticker": "SUNPHARMA",
+          "sector": "Pharmaceuticals",
+          "title": "Generic Medicines Portfolio Lead",
+          "start_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Lupin Limited",
+          "sector": "Pharmaceuticals",
+          "title": "Portfolio Manager - Generics",
+          "start_year": 2015,
+          "end_year": 2019
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-024",
+      "display_name": "Pooja Anand",
+      "synthetic": true,
+      "sector": "Pharmaceuticals",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Dr. Reddy's Laboratories Limited",
+          "sector": "Pharmaceuticals",
+          "title": "Regulatory Affairs Manager",
+          "start_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Aurobindo Pharma Limited",
+          "sector": "Pharmaceuticals",
+          "title": "Regulatory Affairs Associate",
+          "start_year": 2016,
+          "end_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Pfizer India",
+          "sector": "Pharmaceuticals",
+          "title": "Regulatory Compliance Analyst",
+          "start_year": 2013,
+          "end_year": 2016
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-025",
+      "display_name": "Eshan Mukherjee",
+      "synthetic": true,
+      "sector": "Retail & Consumer Durables",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Titan Company Limited",
+          "ticker": "TITAN",
+          "sector": "Retail & Consumer Durables",
+          "title": "Retail Operations Planner",
+          "start_year": 2021
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Shoppers Stop Limited",
+          "sector": "Retail & Consumer Durables",
+          "title": "Retail Operations Analyst",
+          "start_year": 2017,
+          "end_year": 2021
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-026",
+      "display_name": "Diya Srinivasan",
+      "synthetic": true,
+      "sector": "Retail & Consumer Durables",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Asian Paints Limited",
+          "ticker": "ASIANPAINT",
+          "sector": "Retail & Consumer Durables",
+          "title": "Distribution Strategy Analyst",
+          "start_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Future Group India",
+          "sector": "Retail & Consumer Durables",
+          "title": "Sales & Distribution Associate",
+          "start_year": 2016,
+          "end_year": 2020
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-027",
+      "display_name": "Yashika Roy",
+      "synthetic": true,
+      "sector": "Energy & Conglomerates",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Oil and Natural Gas Corporation Limited",
+          "sector": "Energy & Conglomerates",
+          "title": "Energy Markets Researcher",
+          "start_year": 2018
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Cairn India Limited",
+          "sector": "Energy & Conglomerates",
+          "title": "Energy Research Analyst",
+          "start_year": 2014,
+          "end_year": 2018
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-028",
+      "display_name": "Harsh Venkatesh",
+      "synthetic": true,
+      "sector": "Information Technology",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Tech Mahindra Limited",
+          "sector": "Information Technology",
+          "title": "Telecom Technology Delivery Lead",
+          "start_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Infosys Limited",
+          "ticker": "INFY",
+          "sector": "Information Technology",
+          "title": "Technology Delivery Manager",
+          "start_year": 2015,
+          "end_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "IBM India",
+          "sector": "Information Technology",
+          "title": "Systems Engineer",
+          "start_year": 2011,
+          "end_year": 2015
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-029",
+      "display_name": "Meera Khanna",
+      "synthetic": true,
+      "sector": "Financial Services",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Bajaj Finserv Limited",
+          "sector": "Financial Services",
+          "title": "Consumer Credit Strategy Adviser",
+          "start_year": 2021
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Bajaj Finance Limited",
+          "ticker": "BAJFINANCE",
+          "sector": "Financial Services",
+          "title": "Credit Strategy Analyst",
+          "start_year": 2017,
+          "end_year": 2021
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-030",
+      "display_name": "Parth Sengupta",
+      "synthetic": true,
+      "sector": "Consumer Goods",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Britannia Industries Limited",
+          "sector": "Consumer Goods",
+          "title": "Food Supply Chain Manager",
+          "start_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "ITC Limited",
+          "ticker": "ITC",
+          "sector": "Consumer Goods",
+          "title": "Supply Chain Executive",
+          "start_year": 2015,
+          "end_year": 2019
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-031",
+      "display_name": "Zoya Merchant",
+      "synthetic": true,
+      "sector": "Engineering & Infrastructure",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "K E C International Limited",
+          "sector": "Engineering & Infrastructure",
+          "title": "Transmission Projects Specialist",
+          "start_year": 2020
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Bharat Heavy Electricals Limited",
+          "sector": "Engineering & Infrastructure",
+          "title": "Electrical Projects Engineer",
+          "start_year": 2016,
+          "end_year": 2020
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-032",
+      "display_name": "Krishnan Das",
+      "synthetic": true,
+      "sector": "Telecommunications",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Tata Communications Limited",
+          "sector": "Telecommunications",
+          "title": "Enterprise Connectivity Lead",
+          "start_year": 2017
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Bharti Airtel Limited",
+          "ticker": "BHARTIARTL",
+          "sector": "Telecommunications",
+          "title": "Enterprise Solutions Manager",
+          "start_year": 2012,
+          "end_year": 2017
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-033",
+      "display_name": "Avni Shah",
+      "synthetic": true,
+      "sector": "Automotive",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Eicher Motors Limited",
+          "sector": "Automotive",
+          "title": "Commercial Vehicle Product Planner",
+          "start_year": 2021
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Maruti Suzuki India Limited",
+          "ticker": "MARUTI",
+          "sector": "Automotive",
+          "title": "Product Strategy Associate",
+          "start_year": 2017,
+          "end_year": 2021
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-034",
+      "display_name": "Siddharth Lal",
+      "synthetic": true,
+      "sector": "Pharmaceuticals",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Cipla Limited",
+          "sector": "Pharmaceuticals",
+          "title": "Formulations Market Access Manager",
+          "start_year": 2018
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Sun Pharmaceutical Industries Limited",
+          "ticker": "SUNPHARMA",
+          "sector": "Pharmaceuticals",
+          "title": "Market Access Specialist",
+          "start_year": 2014,
+          "end_year": 2018
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-035",
+      "display_name": "Ira Bhattacharya",
+      "synthetic": true,
+      "sector": "Retail & Consumer Durables",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "Trent Limited",
+          "sector": "Retail & Consumer Durables",
+          "title": "Retail Expansion Analyst",
+          "start_year": 2022
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Titan Company Limited",
+          "ticker": "TITAN",
+          "sector": "Retail & Consumer Durables",
+          "title": "Retail Development Associate",
+          "start_year": 2018,
+          "end_year": 2022
+        }
+      ]
+    },
+    {
+      "profile_id": "synthetic-036",
+      "display_name": "Rehan Mirza",
+      "synthetic": true,
+      "sector": "Energy & Conglomerates",
+      "experiences": [
+        {
+          "experience_type": "employment",
+          "organization": "NTPC Limited",
+          "sector": "Energy & Conglomerates",
+          "title": "Power Generation Finance Analyst",
+          "start_year": 2019
+        },
+        {
+          "experience_type": "employment",
+          "organization": "Indian Oil Corporation Limited",
+          "sector": "Energy & Conglomerates",
+          "title": "Financial Planning Analyst",
+          "start_year": 2015,
+          "end_year": 2019
+        }
+      ]
+    }
+  ],
+  "direct_connections": [
+    {"profile_id":"synthetic-001","connection_type":"former_colleague","strength":"strong","last_interaction":"2025-11-15","evidence":"Fictional demo fixture explicitly states a prior working relationship; this is not a real-world connection."},
+    {"profile_id":"synthetic-002","connection_type":"industry_introduction","strength":"moderate","last_interaction":"2025-10-20","evidence":"Fictional demo fixture explicitly records an introduction; shared sector or employer history is not the basis for this relationship."},
+    {"profile_id":"synthetic-005","connection_type":"professional_association","strength":"moderate","last_interaction":"2025-08-03","evidence":"Fictional demo fixture explicitly records a professional association; this is not a real-world connection."},
+    {"profile_id":"synthetic-016","connection_type":"former_colleague","strength":"strong","last_interaction":"2025-12-01","evidence":"Fictional demo fixture explicitly states a prior working relationship; this is not a real-world connection."},
+    {"profile_id":"synthetic-023","connection_type":"industry_introduction","strength":"light","last_interaction":"2024-12-10","evidence":"Fictional demo fixture explicitly records an introduction; shared sector or employer history is not the basis for this relationship."},
+    {"profile_id":"synthetic-027","connection_type":"professional_association","strength":"light","last_interaction":"2024-05-10","evidence":"Fictional demo fixture explicitly records a professional association; this is not a real-world connection."}
+  ],
+  "relationships": [
+    {"from_profile_id":"synthetic-001","to_profile_id":"synthetic-003","relationship_type":"former_colleague","strength":"moderate","last_interaction":"2025-06-18","evidence":"Fictional demo fixture explicitly records a prior working relationship; do not infer this from overlapping employment."},
+    {"from_profile_id":"synthetic-005","to_profile_id":"synthetic-006","relationship_type":"professional_association","strength":"light","last_interaction":"2024-09-11","evidence":"Fictional demo fixture explicitly records a professional association; do not infer this from overlapping employment."},
+    {"from_profile_id":"synthetic-016","to_profile_id":"synthetic-017","relationship_type":"industry_introduction","strength":"moderate","last_interaction":"2025-03-22","evidence":"Fictional demo fixture explicitly records an introduction; do not infer this from overlapping employment."}
+  ]
+}

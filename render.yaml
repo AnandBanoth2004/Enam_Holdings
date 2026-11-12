@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: finn-api
+    runtime: python
+    plan: 1c-2g
+    buildCommand: python -m pip install -r backend/requirements.txt
+    preDeployCommand: python scripts/init_db.py
+    startCommand: python -m uvicorn finn_api.main:app --app-dir backend --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health/ready
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.7
+      - key: PYTHONPATH
+        value: backend
+      - key: FINN_APP_ENVIRONMENT
+        value: production
+      - key: FINN_LOG_LEVEL
+        value: INFO
+      - key: FINN_CORS_ORIGINS
+        sync: false
+      - key: FINN_DATABASE_URL
+        sync: false
+      - key: FINN_AUTH_JWKS_URL
+        sync: false
+      - key: FINN_AUTH_ISSUER
+        sync: false
+      - key: FINN_AUTH_AUDIENCE
+        value: authenticated

@@ -1,0 +1,23 @@
+{
+  "synthetic": true,
+  "notice": "Every announcement below is fictional, generated for UI/database testing, and is not an issuer filing or exchange record.",
+  "announcements": [
+    {"category":"results","ticker":"RELIANCE","headline":"[DEMO ONLY] Illustrative quarterly results notice","body_text":"Synthetic placeholder disclosure. No company financial result is represented.","source_key":"demo-db-results-001"},
+    {"category":"M&A","ticker":"TCS","headline":"[DEMO ONLY] Illustrative acquisition evaluation update","body_text":"Fictional example to exercise the M&A category.","source_key":"demo-db-ma-002"},
+    {"category":"fund_raise","ticker":"HDFCBANK","headline":"[DEMO ONLY] Illustrative capital raising proposal","body_text":"Fictional example; no funding transaction is claimed.","source_key":"demo-db-fund-003"},
+    {"category":"management_change","ticker":"ICICIBANK","headline":"[DEMO ONLY] Fictional appointment of Mira Deshpande as chief strategy officer","body_text":"Fictional scenario for testing executive-to-network matching. Mira Deshpande is not a real executive and this is not an issuer filing.","source_key":"demo-db-management-004"},
+    {"category":"litigation","ticker":"INFY","headline":"[DEMO ONLY] Illustrative legal proceeding update","body_text":"Fictional litigation-category fixture; not a legal filing.","source_key":"demo-db-litigation-005"},
+    {"category":"insider_trading","ticker":"ITC","headline":"[DEMO ONLY] Illustrative insider trading disclosure","body_text":"Fictional compliance-category fixture; not a regulatory disclosure.","source_key":"demo-db-insider-006"},
+    {"category":"earnings_call","ticker":"LT","headline":"[DEMO ONLY] Illustrative earnings call schedule","body_text":"Fictional call schedule; no actual management call is announced.","source_key":"demo-db-call-007"},
+    {"category":"investor_meetings","ticker":"SBIN","headline":"[DEMO ONLY] Illustrative investor meeting schedule","body_text":"Fictional investor-meeting fixture; no real meeting is announced.","source_key":"demo-db-meeting-008"},
+    {"category":"credit_rating","ticker":"BHARTIARTL","headline":"[DEMO ONLY] Illustrative credit rating review","body_text":"Fictional rating-category fixture; no agency opinion is represented.","source_key":"demo-db-rating-009"},
+    {"category":"dividend","ticker":"AXISBANK","headline":"[DEMO ONLY] Illustrative dividend recommendation","body_text":"Fictional dividend scenario; no distribution has been declared.","source_key":"demo-db-dividend-010"},
+    {"category":"bonus_split","ticker":"KOTAKBANK","headline":"[DEMO ONLY] Illustrative share subdivision proposal","body_text":"Fictional corporate-action scenario; no split has been proposed.","source_key":"demo-db-split-011"},
+    {"category":"capex","ticker":"HINDUNILVR","headline":"[DEMO ONLY] Illustrative manufacturing investment plan","body_text":"Fictional capex scenario; no issuer investment is claimed.","source_key":"demo-db-capex-012"},
+    {"category":"press_release","ticker":"BAJFINANCE","headline":"[DEMO ONLY] Illustrative business update","body_text":"Fictional press-release category fixture.","source_key":"demo-db-press-013"},
+    {"category":"postal_ballot","ticker":"MARUTI","headline":"[DEMO ONLY] Illustrative postal ballot notice","body_text":"Fictional shareholder process scenario.","source_key":"demo-db-ballot-014"},
+    {"category":"agm_egm","ticker":"SUNPHARMA","headline":"[DEMO ONLY] Illustrative extraordinary general meeting notice","body_text":"Fictional EGM schedule; no actual meeting is announced.","source_key":"demo-db-egm-015"},
+    {"category":"pledging","ticker":"TATAMOTORS","headline":"[DEMO ONLY] Illustrative promoter pledge disclosure","body_text":"Fictional pledge-category scenario; no actual pledge is represented.","source_key":"demo-db-pledge-016"},
+    {"category":"unclassified","ticker":"TITAN","headline":"[DEMO ONLY] Illustrative unclassified filing","body_text":"Synthetic low-confidence filing placeholder.","source_key":"demo-db-unclassified-017"}
+  ]
+}

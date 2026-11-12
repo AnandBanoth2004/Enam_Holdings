@@ -1,0 +1,9 @@
+FINN SYNTHETIC DEMONSTRATION DOCUMENT
+NOT AN ISSUER FILING. NOT COMPANY-REPORTED DATA.
+
+Mapped ticker for database testing: TCS
+Example period label: Q2 FY26
+Currency and scale: INR crore
+Illustrative-only metric row: revenue 800, EBITDA 190, PBT 175, PAT 130.
+
+All values above are invented test placeholders. Do not cite, compare, or present them as Tata Consultancy Services results.

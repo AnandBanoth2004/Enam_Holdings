@@ -1,0 +1,15 @@
+FINN DEMONSTRATION FIXTURE — SYNTHETIC AND NOT AN ISSUER DOCUMENT
+
+This fictional text demonstrates the structure of an annual report for software
+testing only. It is not an annual report published by any company and contains
+no company-reported financial values, management statements, or investment
+information.
+
+Example sections:
+- Business overview
+- Risk factors
+- Consolidated financial statements
+- Management discussion and analysis
+- Corporate governance
+
+All headings above are generic placeholders. No issuer claims are made.

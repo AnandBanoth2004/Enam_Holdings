@@ -1,0 +1,13 @@
+FINN DEMONSTRATION FIXTURE — SYNTHETIC AND NOT AN ISSUER PRESENTATION
+
+This fictional text demonstrates the structure of an investor presentation
+for software testing only. It is not a presentation published by any company
+and contains no company-reported financial values, strategy, or guidance.
+
+Example sections:
+- Operating overview
+- Illustrative segment summary
+- Capital allocation
+- Outlook
+
+All headings above are generic placeholders. No issuer claims are made.

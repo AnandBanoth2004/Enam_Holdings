@@ -1,0 +1,9 @@
+FINN SYNTHETIC DEMONSTRATION DOCUMENT
+NOT AN ISSUER FILING. NOT COMPANY-REPORTED DATA.
+
+Mapped ticker for database testing: SUNPHARMA
+Example period label: Q2 FY26
+Currency and scale: INR crore
+Illustrative-only metric row: revenue 600, EBITDA 150, PBT 125, PAT 90.
+
+All values above are invented test placeholders. Do not cite, compare, or present them as Sun Pharmaceutical results.

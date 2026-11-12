@@ -1,0 +1,29 @@
+{
+  "note": "Provisional starter demo universe only; these 18 issuers are not an official ENAM portfolio. Override FINN_MARKET_TICKERS and supply a reviewed seed for another portfolio.",
+  "companies": [
+    {"legal_name":"Reliance Industries Limited","display_name":"Reliance Industries","exchange":"NSE","symbol":"RELIANCE.NS","sector":"Energy & Conglomerates"},
+    {"legal_name":"Tata Consultancy Services Limited","display_name":"Tata Consultancy Services","exchange":"NSE","symbol":"TCS.NS","sector":"Information Technology"},
+    {"legal_name":"HDFC Bank Limited","display_name":"HDFC Bank","exchange":"NSE","symbol":"HDFCBANK.NS","sector":"Financial Services"},
+    {"legal_name":"ICICI Bank Limited","display_name":"ICICI Bank","exchange":"NSE","symbol":"ICICIBANK.NS","sector":"Financial Services"},
+    {"legal_name":"Infosys Limited","display_name":"Infosys","exchange":"NSE","symbol":"INFY.NS","sector":"Information Technology"},
+    {"legal_name":"ITC Limited","display_name":"ITC","exchange":"NSE","symbol":"ITC.NS","sector":"Consumer Goods"},
+    {"legal_name":"Larsen & Toubro Limited","display_name":"Larsen & Toubro","exchange":"NSE","symbol":"LT.NS","sector":"Engineering & Infrastructure"},
+    {"legal_name":"State Bank of India","display_name":"State Bank of India","exchange":"NSE","symbol":"SBIN.NS","sector":"Financial Services"},
+    {"legal_name":"Bharti Airtel Limited","display_name":"Bharti Airtel","exchange":"NSE","symbol":"BHARTIARTL.NS","sector":"Telecommunications"},
+    {"legal_name":"Axis Bank Limited","display_name":"Axis Bank","exchange":"NSE","symbol":"AXISBANK.NS","sector":"Financial Services"},
+    {"legal_name":"Kotak Mahindra Bank Limited","display_name":"Kotak Mahindra Bank","exchange":"NSE","symbol":"KOTAKBANK.NS","sector":"Financial Services"},
+    {"legal_name":"Hindustan Unilever Limited","display_name":"Hindustan Unilever","exchange":"NSE","symbol":"HINDUNILVR.NS","sector":"Consumer Goods"},
+    {"legal_name":"Bajaj Finance Limited","display_name":"Bajaj Finance","exchange":"NSE","symbol":"BAJFINANCE.NS","sector":"Financial Services"},
+    {"legal_name":"Maruti Suzuki India Limited","display_name":"Maruti Suzuki India","exchange":"NSE","symbol":"MARUTI.NS","sector":"Automotive"},
+    {"legal_name":"Sun Pharmaceutical Industries Limited","display_name":"Sun Pharmaceutical","exchange":"NSE","symbol":"SUNPHARMA.NS","sector":"Pharmaceuticals"},
+    {"legal_name":"Tata Motors Limited","display_name":"Tata Motors","exchange":"NSE","symbol":"TATAMOTORS.NS","sector":"Automotive"},
+    {"legal_name":"Titan Company Limited","display_name":"Titan Company","exchange":"NSE","symbol":"TITAN.NS","sector":"Retail & Consumer Durables"},
+    {"legal_name":"Asian Paints Limited","display_name":"Asian Paints","exchange":"NSE","symbol":"ASIANPAINT.NS","sector":"Retail & Consumer Durables"}
+  ],
+  "ad_hoc_companies": [
+    {"legal_name":"Power Grid Corporation of India Limited","display_name":"Power Grid Corporation of India","exchange":"NSE","symbol":"POWERGRID.NS","sector":"Utilities"},
+    {"legal_name":"Mahindra & Mahindra Limited","display_name":"Mahindra & Mahindra","exchange":"NSE","symbol":"M&M.NS","sector":"Automotive"},
+    {"legal_name":"Wipro Limited","display_name":"Wipro","exchange":"NSE","symbol":"WIPRO.NS","sector":"Information Technology"},
+    {"legal_name":"Cipla Limited","display_name":"Cipla","exchange":"NSE","symbol":"CIPLA.NS","sector":"Pharmaceuticals"}
+  ]
+}

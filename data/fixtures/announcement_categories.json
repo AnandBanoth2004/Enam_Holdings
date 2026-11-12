@@ -1,0 +1,22 @@
+{
+  "notice": "Category names are the FINN assignment taxonomy, not synthetic source facts.",
+  "categories": [
+    {"category_key":"results","display_name":"Results","priority":100},
+    {"category_key":"M&A","display_name":"M&A","priority":100},
+    {"category_key":"fund_raise","display_name":"Fund raise","priority":90},
+    {"category_key":"management_change","display_name":"Management change","priority":90},
+    {"category_key":"litigation","display_name":"Litigation","priority":85},
+    {"category_key":"insider_trading","display_name":"Insider trading","priority":80},
+    {"category_key":"earnings_call","display_name":"Earnings call","priority":65},
+    {"category_key":"investor_meetings","display_name":"Investor meetings","priority":55},
+    {"category_key":"credit_rating","display_name":"Credit rating","priority":75},
+    {"category_key":"dividend","display_name":"Dividend","priority":85},
+    {"category_key":"bonus_split","display_name":"Bonus / split","priority":75},
+    {"category_key":"capex","display_name":"Capital expenditure","priority":80},
+    {"category_key":"press_release","display_name":"Press release","priority":40},
+    {"category_key":"postal_ballot","display_name":"Postal ballot","priority":45},
+    {"category_key":"agm_egm","display_name":"AGM / EGM","priority":45},
+    {"category_key":"pledging","display_name":"Pledging","priority":80},
+    {"category_key":"unclassified","display_name":"Unclassified","priority":20}
+  ]
+}

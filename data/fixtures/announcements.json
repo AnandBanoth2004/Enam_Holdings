@@ -1,0 +1,23 @@
+{
+  "notice": "All entries are fabricated demonstration fixtures. They are not real filings and must never be shown as live exchange announcements.",
+  "announcements": [
+    {
+      "source_key": "demo-results-001",
+      "ticker": "RELIANCE",
+      "filed_at": "2026-11-10T10:00:00+05:30",
+      "headline": "[DEMO ONLY] Illustrative quarterly results disclosure"
+    },
+    {
+      "source_key": "demo-board-002",
+      "ticker": "TCS",
+      "filed_at": "2026-11-10T11:15:00+05:30",
+      "headline": "[DEMO ONLY] Illustrative board meeting outcome"
+    },
+    {
+      "source_key": "demo-investor-003",
+      "ticker": "HDFCBANK",
+      "filed_at": "2026-11-10T13:30:00+05:30",
+      "headline": "[DEMO ONLY] Illustrative investor presentation notice"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+# Environment and credentials
+.env
+.env.*
+!.env.example
+!frontend/.env.example
+frontend/.env.local
+backend/.env
+docs/1. ENAM_Founding AI Engineer Build Challenge_Main.pdf
+docs/2. ENAM_Build_Challenge_Reference.pdf
+
+# JavaScript / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/.vercel/
+frontend/out/
+frontend/coverage/
+frontend/tsconfig.tsbuildinfo
+frontend/next-env.d.ts
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+backend/.venv/
+*.egg-info/
+*.log
+
+# Local data and editors
+data/documents/*
+!data/documents/.gitkeep
+*.sqlite
+*.sqlite3
+*.db
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
