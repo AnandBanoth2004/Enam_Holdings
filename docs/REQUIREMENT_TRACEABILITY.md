@@ -1,6 +1,8 @@
 # FINN Requirement Traceability Matrix
 
-**Status convention:** `Planned — analysis only` means this document proposes an implementation and verification approach; no application implementation has started. Priorities: **P0** essential submission scope; **P1** differentiators; **P2** optional enhancements.
+> **Historical planning artifact:** this matrix was created during the initial requirements-analysis stage, before implementation. Its `Planned — analysis only` statuses and proposed implementation column are not current implementation claims. For the actual implementation and verification status, see [FINAL_SUBMISSION_CHECKLIST.md](./FINAL_SUBMISSION_CHECKLIST.md), [TEST_REPORT.md](./TEST_REPORT.md), and [KNOWN_LIMITATIONS.md](./KNOWN_LIMITATIONS.md). The original row statuses have not been mechanically rewritten because a requirement-by-requirement re-verification is still required.
+
+**Original status convention:** `Planned — analysis only` means this document proposed an implementation and verification approach at the time. Priorities: **P0** essential submission scope; **P1** differentiators; **P2** optional enhancements.
 
 Source abbreviations:
 

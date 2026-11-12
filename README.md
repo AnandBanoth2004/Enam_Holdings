@@ -94,12 +94,18 @@ screenshots before publishing and add them under `docs/screenshots/`.
 
 ### Prerequisites
 
-- Node.js 22+ and npm.
-- Python 3.12+.
-- Docker with the `pgvector/pgvector` image, or a PostgreSQL service with
-  pgvector enabled.
-- Optional Supabase Auth project for authenticated Push, Pull, Network, and
-  Copilot workflows.
+- Windows 10/11, PowerShell, Git, Node.js 22+ with npm, Python 3.12+, and
+  Docker Desktop.
+- Open PowerShell in the repository root. Check that the required tools are
+  installed and Docker Desktop is running:
+
+  ```powershell
+  git --version
+  node --version
+  npm --version
+  py --version
+  docker version
+  ```
 
 ### 1. Start PostgreSQL with pgvector
 
@@ -115,55 +121,63 @@ docker run --name finn-postgres `
 This password is for the local container only. Never reuse it in a hosted
 environment.
 
-### 2. Configure and run the backend
+If you already created this container, start it instead:
+
+```powershell
+docker start finn-postgres
+```
+
+### 2. Configure and install the backend
 
 From the repository root:
 
 ```powershell
-Copy-Item .env.example .env
+if (-not (Test-Path .env)) { Copy-Item .env.example .env }
+notepad .env
 # Edit .env and set FINN_DATABASE_URL to:
 # postgresql+psycopg://postgres:postgres@127.0.0.1:54322/postgres
 
-python -m venv backend\.venv
-.\backend\.venv\Scripts\Activate.ps1
-python -m pip install -r backend\requirements-dev.txt
-python -m uvicorn finn_api.main:app --app-dir backend --reload --port 8000
+py -3 -m venv backend\.venv
+.\backend\.venv\Scripts\python.exe -m pip install -r backend\requirements-dev.txt
 ```
 
-Health checks:
+Set `FINN_DATABASE_URL` in `.env` to
+`postgresql+psycopg://postgres:postgres@127.0.0.1:54322/postgres`. Save and
+close Notepad. Do not overwrite an existing `.env`; it may contain local
+settings you want to keep.
 
-- API liveness: `http://localhost:8000/health/live`
-- API/database/schema readiness: `http://localhost:8000/health/ready`
-- API documentation: `http://localhost:8000/docs`
+### 3. Initialize and seed the local demo
 
-### 3. Initialize and seed a repeatable local demo
-
-In another PowerShell terminal, configure the local database and development
+In the setup PowerShell window, configure the local database and development
 mode, then run the guarded destructive reset:
 
 ```powershell
 $env:FINN_DATABASE_URL = "postgresql+psycopg://postgres:postgres@127.0.0.1:54322/postgres"
 $env:FINN_APP_ENVIRONMENT = "development"
-python scripts\reset_and_seed_demo.py --confirm-reset
+.\backend\.venv\Scripts\python.exe scripts\reset_and_seed_demo.py --confirm-reset
 ```
 
-The reset command refuses production and non-local PostgreSQL hosts. It seeds a
-provisional 18-company portfolio, demo announcements and market observations,
-synthetic financial/document fixtures, and fictional network profiles.
-Synthetic records remain labeled as such. This is not an official ENAM
-portfolio.
+Wait for `FINN local demo database reset and seed completed.` before moving on.
+This command deletes and recreates FINN application tables before seeding. It
+refuses production and non-local PostgreSQL hosts; never use it with Supabase
+or a database containing data you need to keep. It seeds a synthetic
+18-company demo, announcements, market observations, financial/document
+fixtures, and fictional network profiles. This is not an official ENAM
+portfolio. For non-destructive schema upgrades, use
+`.\backend\.venv\Scripts\python.exe scripts\init_db.py`.
 
 To use a hosted Supabase Auth project with the local demo database:
 
 1. Configure `FINN_AUTH_JWKS_URL`, `FINN_AUTH_ISSUER`, and
    `FINN_AUTH_AUDIENCE` in `.env` using that project’s Auth settings.
 2. Create an evaluation user in Supabase Auth and copy the user UUID (`sub`).
-3. Run `python scripts\seed_demo_data.py --auth-subject <SUPABASE_USER_UUID>`.
+3. Run
+   `.\backend\.venv\Scripts\python.exe scripts\seed_demo_data.py --auth-subject <SUPABASE_USER_UUID>`.
    This idempotently seeds demo records and maps the synthetic demo workspace
    user to that identity; it refuses to reassign an identity already owned by
    another FINN user.
-4. Copy `frontend\.env.example` to `frontend\.env.local`, set
-   `FINN_WORKSPACE_ID` to the seeded demo workspace ID, and start the frontend.
+4. Copy `frontend\.env.example` to `frontend\.env.local`, and set
+   `FINN_WORKSPACE_ID` to the seeded demo workspace ID.
 5. Sign in through an approved Supabase client to obtain a user access token.
    The current prototype has no built-in sign-in flow; paste the user token in
    the Network page for this browser session. Never use a service-role key.
@@ -172,17 +186,62 @@ Without a configured identity provider and user token, private APIs correctly
 return `401`; UI pages can load but private Push/Network/Copilot data will not.
 Automated tests use SQLite and do not require a live provider.
 
-### 4. Run the frontend
+### 4. Start and check the backend
+
+After the migration and seed command succeeds, start the API in the same
+PowerShell window:
 
 ```powershell
-Copy-Item frontend\.env.example frontend\.env.local
+.\backend\.venv\Scripts\python.exe -m uvicorn finn_api.main:app --app-dir backend --reload --port 8000
+```
+
+Keep that window open. In a second PowerShell window, check the API and its
+database connection:
+
+```powershell
+Invoke-RestMethod http://localhost:8000/health/live
+Invoke-RestMethod http://localhost:8000/health/ready
+```
+
+Both responses should have `status` set to `ok`. API documentation:
+`http://localhost:8000/docs`.
+
+### 5. Start the frontend
+
+```powershell
+if (-not (Test-Path frontend\.env.local)) {
+    Copy-Item frontend\.env.example frontend\.env.local
+}
 Set-Location frontend
 npm ci
 npm run dev
 ```
 
 Open `http://localhost:3000`. The frontend calls same-origin Next.js API proxy
-routes, which forward server-side to `FINN_API_BASE_URL`.
+routes, which forward server-side to `FINN_API_BASE_URL`. Keep this terminal
+open while using the site. Without Supabase Auth and a user access token,
+private APIs return `401`; the public UI can still load.
+
+### 6. Run the checks before publishing
+
+From the repository root, run the backend tests:
+
+```powershell
+.\backend\.venv\Scripts\python.exe -m pytest -q
+```
+
+Then run the frontend checks:
+
+```powershell
+Set-Location frontend
+npm run lint
+npm run typecheck
+npm run build
+Set-Location ..
+```
+
+Proceed only after all commands complete successfully. Fix and rerun any
+command that fails.
 
 ## Environment variables
 
@@ -258,10 +317,83 @@ Supabase PostgreSQL/Auth with pgvector. Production configuration is separate:
 defines the Vercel build. Required secret values are entered in provider
 dashboards and are deliberately not committed.
 
+### Publish the project to GitHub
+
+Only continue after the local database, API, website, and checks above work.
+From the repository root, inspect and stage the project files:
+
+```powershell
+git status --short
+git add -A
+git diff --cached --check
+git diff --cached --name-only
+```
+
+Before committing, confirm that `.env`, `frontend\.env.local`, credentials,
+and files you do not have permission to publish are not staged. Then commit
+and push. Replace the placeholders with your GitHub owner and repository:
+
+```powershell
+git commit -m "Prepare FINN for deployment"
+git remote add origin https://github.com/<GITHUB_OWNER>/<REPOSITORY>.git
+git push -u origin main
+```
+
+If `origin` already exists, use this command instead of `git remote add`:
+
+```powershell
+git remote set-url origin https://github.com/<GITHUB_OWNER>/<REPOSITORY>.git
+```
+
+Open the GitHub repository after the push and confirm the files are present.
+Never commit `.env`, `.env.local`, database URLs, JWTs, provider keys, or
+Supabase service-role credentials.
+
+### Deploy with Supabase, Render, and Vercel
+
+After the GitHub push succeeds, follow [Deployment plan](docs/DEPLOYMENT_PLAN.md)
+in order. In summary:
+
+1. Create a Supabase project, enable `vector`, create an Auth evaluation user,
+   and keep its database URL, issuer, JWKS URL, and user UUID available for
+   provider configuration. Do not put credentials in the repository.
+2. Create a Render Web Service from the GitHub repository root using
+   `render.yaml`. Set the Supabase database URL, Auth issuer/JWKS URL, and
+   exact frontend HTTPS CORS origin in Render's environment settings. Confirm
+   the migration pre-deploy step succeeds and
+   `https://<RENDER_SERVICE>.onrender.com/health/ready` returns `status: ok`.
+3. Create a Vercel project from the same GitHub repository and set its root
+   directory to `frontend`. Set `FINN_API_BASE_URL` to the Render API origin
+   and `FINN_WORKSPACE_ID` to the demo workspace UUID in Vercel's server-side
+   environment settings, then deploy the site.
+4. Add the final Vercel HTTPS origin to Render's `FINN_CORS_ORIGINS`, then
+   redeploy/restart the Render service. Seed the synthetic evaluation data
+   after migrations and use the Supabase evaluation user as described in the
+   deployment plan.
+5. Open the Vercel website, test the deployed site and API connection, and
+   save the actual Vercel URL for the assignment. Supabase provides the
+   database/Auth project, not the public website URL; the Vercel URL is the
+   website link to submit.
+
 Deployment has **not** been performed: this workspace has no provider
 credentials, deployment CLI login, Git repository remote, or recorded public
 URLs. See [Deployment plan](docs/DEPLOYMENT_PLAN.md) for the exact provider
 setup, migration, seed, health, and smoke-test steps.
+
+## Final technical and submission documents
+
+- [Final architecture](docs/FINAL_ARCHITECTURE.md)
+- [Data security and privacy](docs/DATA_SECURITY_AND_PRIVACY.md)
+- [AI and agent design](docs/AI_AGENT_DESIGN.md)
+- [Data provenance](docs/DATA_PROVENANCE.md)
+- [Engineering trade-offs](docs/ENGINEERING_TRADEOFFS.md)
+- [AI-assisted build history and export checklist](docs/AI_BUILD_HISTORY.md)
+- [Final submission audit and release gates](docs/FINAL_SUBMISSION_CHECKLIST.md)
+- [Covering email draft](docs/COVERING_EMAIL.md)
+
+The final audit currently marks the project **not ready for external
+submission**: the public repository, deployed URL, actual agent-session
+exports, and authenticated end-to-end workflows are still outstanding.
 
 ## Security and privacy
 

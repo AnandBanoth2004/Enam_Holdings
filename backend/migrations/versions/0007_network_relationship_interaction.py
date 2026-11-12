@@ -1,11 +1,11 @@
 """Store the last evidenced network interaction.
 
-Revision ID: 0007_network_relationship_interaction
+Revision ID: 0007_network_interaction
 """
 from alembic import op
 import sqlalchemy as sa
 
-revision = "0007_network_relationship_interaction"
+revision = "0007_network_interaction"
 down_revision = "0006_pull_document_processing"
 branch_labels = None
 depends_on = None

@@ -116,7 +116,7 @@ The explicit workspace argument prevents accidental global seeding. If that ID d
 - Revision `0002_market_retrieval` adds OHLC/adjusted-close and derived EOD columns to `market_daily`, plus announcement source timestamp, retrieval status, raw path, and raw payload.
 - Revision `0003_experience_sector` adds sector provenance to `person_experiences`.
 - Revision `0005_push_intelligence` adds announcement summaries, numeric materiality scores/reasons, and priority thresholds on alert rules.
-- Revision `0007_network_relationship_interaction` adds the last explicitly recorded interaction time to `network_relationships`.
+- Revision `0007_network_interaction` adds the last explicitly recorded interaction time to `network_relationships`.
 - Revision `0006_pull_document_processing` adds document period/file/extraction metadata and content-checksum indexes.
 - Existing unique constraints remain the duplicate-prevention keys. Raw source timestamps and `fetched_at` are separate fields.
 
